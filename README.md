@@ -19,8 +19,11 @@ Supported inbound document types follow the Hermes allowlist: PDF, Markdown, pla
 ## Install
 
 ```bash
-# From npm / GitHub after publishing:
-dsh plugin --profile web add dsh-im-hub-media
+# From npm after publishing:
+dsh plugin --profile web add @goodandready/dsh-im-hub-media
+
+# From GitHub:
+dsh plugin --profile web add github:GooDAnDReaDY/dsh-im-hub-media
 
 # Locally from a checkout:
 dsh plugin --profile web add /path/to/dsh-im-hub-media

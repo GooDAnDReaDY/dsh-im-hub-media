@@ -1,0 +1,23 @@
+# dsh-im-hub-media bundle patch: insert the IM gateway plugin row (fork of
+# dsh-im-hub with Telegram media support).
+#
+# The row is disabled by default. Enable it from the profile's own
+# cordis.patch.yml (or a --patch overlay) with your adapter credentials, e.g.:
+#
+#   - id: dsh-im-hub-media
+#     disabled: false
+#     config:
+#       adapters:
+#         telegram:
+#           enabled: true
+#           token: '123456:ABC-DEF...'
+#
+# The row id matches the package name: the web client-modules scanner keys
+# client bundles by loader entry name, and the row id is what the profile
+# patch addresses.
+
+- insert:
+    - id: dsh-im-hub-media
+      name: 'dsh-im-hub-media'
+      disabled: true
+      config: {}

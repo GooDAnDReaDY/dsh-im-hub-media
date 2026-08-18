@@ -1,0 +1,76 @@
+{
+  "name": "dsh-im-hub-media",
+  "version": "0.2.0-media.1",
+  "description": "Multi-platform IM gateway for DeepSeek Harness (fork of dsh-im-hub with media): Telegram voice/photo/document/video + reply handling, STT (Deepgram primary, HF Whisper fallback), outbound MEDIA: markers. Feishu/WeCom kept as-is.",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/GooDAnDReaDY/dsh-im-hub-media.git"
+  },
+  "homepage": "https://github.com/GooDAnDReaDY/dsh-im-hub-media",
+  "bugs": {
+    "url": "https://github.com/GooDAnDReaDY/dsh-im-hub-media/issues"
+  },
+  "keywords": [
+    "deepseek-harness",
+    "dsh",
+    "plugin",
+    "bundle",
+    "im",
+    "chatbot",
+    "feishu",
+    "lark",
+    "wecom",
+    "wechat",
+    "telegram",
+    "agent",
+    "media",
+    "stt",
+    "voice",
+    "deepgram"
+  ],
+  "type": "module",
+  "main": "lib/index.js",
+  "exports": {
+    ".": "./lib/index.js",
+    "./client": "./lib/client.js",
+    "./cordis.patch.yml": "./cordis.patch.yml",
+    "./package.json": "./package.json"
+  },
+  "files": [
+    "lib",
+    "cordis.patch.yml",
+    "README.md",
+    "LICENSE"
+  ],
+  "license": "MIT",
+  "dsh": {
+    "bundle": {
+      "patch": "./cordis.patch.yml"
+    },
+    "client": {
+      "inject": [
+        "@deepseek-ai/dsh-client-runtime",
+        "@deepseek-ai/dsh-client-connection",
+        "@deepseek-ai/dsh-client-ui-settings",
+        "@deepseek-ai/dsh-api-remotes"
+      ],
+      "platform": "web"
+    }
+  },
+  "peerDependencies": {
+    "@deepseek-ai/cordis": "^4.0.1",
+    "@deepseek-ai/dsh-agent": "^0.1.0-rc.6",
+    "@deepseek-ai/dsh-agent-loop": "^0.1.0-rc.6",
+    "@deepseek-ai/dsh-client-runtime": "^0.1.0-rc.6",
+    "@deepseek-ai/dsh-client-connection": "^0.1.0-rc.6",
+    "@deepseek-ai/dsh-client-ui-settings": "^0.1.0-rc.6",
+    "@deepseek-ai/dsh-api-remotes": "^0.1.0-rc.6",
+    "@deepseek-ai/dsh-llm": "^0.1.0-rc.6",
+    "@deepseek-ai/dsh-session": "^0.1.0-rc.6",
+    "@deepseek-ai/dsh-settings": "^0.1.0-rc.6",
+    "@deepseek-ai/schemastery": "^3.18.1"
+  },
+  "engines": {
+    "node": ">=22"
+  }
+}

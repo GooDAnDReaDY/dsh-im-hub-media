@@ -1,6 +1,6 @@
 {
-  "name": "dsh-im-hub-media",
-  "version": "0.2.0-media.1",
+  "name": "@goodandready/dsh-im-hub-media",
+  "version": "0.2.0",
   "description": "Multi-platform IM gateway for DeepSeek Harness (fork of dsh-im-hub with media): Telegram voice/photo/document/video + reply handling, STT (Deepgram primary, HF Whisper fallback), outbound MEDIA: markers. Feishu/WeCom kept as-is.",
   "repository": {
     "type": "git",
@@ -61,10 +61,10 @@
     "@deepseek-ai/cordis": "^4.0.1",
     "@deepseek-ai/dsh-agent": "^0.1.0-rc.6",
     "@deepseek-ai/dsh-agent-loop": "^0.1.0-rc.6",
-    "@deepseek-ai/dsh-client-runtime": "^0.1.0-rc.6",
-    "@deepseek-ai/dsh-client-connection": "^0.1.0-rc.6",
-    "@deepseek-ai/dsh-client-ui-settings": "^0.1.0-rc.6",
     "@deepseek-ai/dsh-api-remotes": "^0.1.0-rc.6",
+    "@deepseek-ai/dsh-client-connection": "^0.1.0-rc.6",
+    "@deepseek-ai/dsh-client-runtime": "^0.1.0-rc.6",
+    "@deepseek-ai/dsh-client-ui-settings": "^0.1.0-rc.6",
     "@deepseek-ai/dsh-llm": "^0.1.0-rc.6",
     "@deepseek-ai/dsh-session": "^0.1.0-rc.6",
     "@deepseek-ai/dsh-settings": "^0.1.0-rc.6",

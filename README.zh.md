@@ -2,7 +2,7 @@
 
 <div align="center">
 
-<h3>Multi-Platform Instant Messaging Gateway with Full Media & STT Audio Support</h3>
+<h3>DeepSeek Harness 多平台即时通讯媒体网关（支持语音转写与富媒体）</h3>
 
 <p align="center">
   <a href="https://www.npmjs.com/package/@goodandready/dsh-im-hub-media"><img src="https://img.shields.io/npm/v/@goodandready/dsh-im-hub-media.svg?style=for-the-badge&color=6366f1&labelColor=1e1b4b" alt="npm version"></a>
@@ -21,21 +21,21 @@
 
 ---
 
-## ⚡ Overview
+## ⚡ 插件概览
 
-**`dsh-im-hub-media`** links your DeepSeek Harness agents to **Telegram**, **Feishu (Lark)**, and **Enterprise WeChat (WeCom)** with automated speech-to-text voice note transcription and seamless media exchange.
+**`dsh-im-hub-media`** 将 DeepSeek Harness 智能体接入 **Telegram**、**飞书 (Lark)** 与 **企业微信 (WeCom)**，支持语音消息自动识别转写与富媒体收发。
 
 ```mermaid
 graph LR
-    User[👤 Telegram / Feishu / WeCom] -->|Voice Note / Photo / Doc| Gateway[dsh-im-hub-media]
-    Gateway -->|Auto STT Transcription| DSH[DSH Agent Execution]
-    DSH -->|Text & Media Responses| Gateway
-    Gateway -->|Message Delivery| User
+    User[👤 Telegram / 飞书 / 企业微信] -->|语音条 / 图片 / 附件| Gateway[dsh-im-hub-media 网关]
+    Gateway -->|自动调用 STT 转写| DSH[智能体上下文推理]
+    DSH -->|生成文本与文件响应| Gateway
+    Gateway -->|消息实时回传| User
 ```
 
 ---
 
-## 📦 Quick Installation
+## 📦 安装指南
 
 ```bash
 dsh plugin --profile web add @goodandready/dsh-im-hub-media
@@ -43,6 +43,6 @@ dsh plugin --profile web add @goodandready/dsh-im-hub-media
 
 ---
 
-## 📄 License
+## 📄 开源协议
 
 MIT © [GooDAnDReaDY](https://github.com/GooDAnDReaDY)

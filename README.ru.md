@@ -2,7 +2,7 @@
 
 <div align="center">
 
-<h3>Multi-Platform Instant Messaging Gateway with Full Media & STT Audio Support</h3>
+<h3>Многоплатформенный IM-шлюз с поддержкой голосовых сообщений (авто-STT) и медиафайлов</h3>
 
 <p align="center">
   <a href="https://www.npmjs.com/package/@goodandready/dsh-im-hub-media"><img src="https://img.shields.io/npm/v/@goodandready/dsh-im-hub-media.svg?style=for-the-badge&color=6366f1&labelColor=1e1b4b" alt="npm version"></a>
@@ -21,21 +21,21 @@
 
 ---
 
-## ⚡ Overview
+## ⚡ Обзор
 
-**`dsh-im-hub-media`** links your DeepSeek Harness agents to **Telegram**, **Feishu (Lark)**, and **Enterprise WeChat (WeCom)** with automated speech-to-text voice note transcription and seamless media exchange.
+**`dsh-im-hub-media`** подключает агентов DeepSeek Harness к **Telegram**, **Feishu (Lark)** и **Enterprise WeChat (WeCom)** с автоматическим распознаванием голосовых сообщений (STT) и пересылкой медиафайлов.
 
 ```mermaid
 graph LR
-    User[👤 Telegram / Feishu / WeCom] -->|Voice Note / Photo / Doc| Gateway[dsh-im-hub-media]
-    Gateway -->|Auto STT Transcription| DSH[DSH Agent Execution]
-    DSH -->|Text & Media Responses| Gateway
-    Gateway -->|Message Delivery| User
+    User[👤 Telegram / Feishu / WeCom] -->|Голосовое / Фото / Файл| Gateway[Шлюз dsh-im-hub-media]
+    Gateway -->|Авто-распознавание STT| DSH[Работа агента DSH]
+    DSH -->|Текстовый или медиа ответ| Gateway
+    Gateway -->|Доставка сообщения| User
 ```
 
 ---
 
-## 📦 Quick Installation
+## 📦 Быстрая установка
 
 ```bash
 dsh plugin --profile web add @goodandready/dsh-im-hub-media
@@ -43,6 +43,6 @@ dsh plugin --profile web add @goodandready/dsh-im-hub-media
 
 ---
 
-## 📄 License
+## 📄 Лицензия
 
 MIT © [GooDAnDReaDY](https://github.com/GooDAnDReaDY)

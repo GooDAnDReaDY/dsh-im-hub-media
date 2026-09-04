@@ -1,6 +1,6 @@
 {
   "name": "@goodandready/dsh-im-hub-media",
-  "version": "0.2.2",
+  "version": "0.2.3",
   "description": "Multi-platform IM gateway for DeepSeek Harness (fork of dsh-im-hub with media): Telegram voice/photo/document/video + reply handling, STT (Deepgram primary, HF Whisper fallback), outbound MEDIA: markers. Feishu/WeCom kept as-is.",
   "repository": {
     "type": "git",

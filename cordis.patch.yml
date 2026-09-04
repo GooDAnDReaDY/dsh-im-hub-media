@@ -18,6 +18,6 @@
 
 - insert:
     - id: dsh-im-hub-media
-      name: 'dsh-im-hub-media'
+      name: '@goodandready/dsh-im-hub-media'
       disabled: true
       config: {}
